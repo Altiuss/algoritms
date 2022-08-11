@@ -1,7 +1,7 @@
 public class Stack {
-    StackItem top = null;
+    StackItem top = null; //adress objekta
 
-    public void push(int item){
+    public void push(char item){
         StackItem temp = new StackItem();
         temp.value = item;
         temp.next = top;
@@ -10,7 +10,7 @@ public class Stack {
 
     }
     public int pop( ){
-        int a =  top.value;
+        char a =  top.value;
                                     // pabidit top
         top = top.next;
         return a;
@@ -24,8 +24,8 @@ public class Stack {
 
 
     class StackItem{
-        int value;
-        StackItem next;
+        char value = 0;
+        StackItem next = null;
 
     }
 
