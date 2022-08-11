@@ -15,7 +15,9 @@ public class Main {
             System.out.println(st1.pop());
         }
 
-
+copyst str2 = new copyst(10);
+        str2.push("qwerty");
+        System.out.println(str2.pop());
 
     }
 }
