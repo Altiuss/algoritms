@@ -5,13 +5,13 @@ public class Stack {
     int top;
 
 
-    public Stack(){
-       array = new int[10];
+    public Stack(int length){
+       array = new int[length];
         top = -1;
     }
 
     public void push(int item){
-        if (top == 9) {
+        if (top == array.length -1) {
             System.out.println("Stack is fuul");
         } else {
             top++;
