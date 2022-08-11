@@ -1,32 +1,33 @@
 public class Stack {
-
-
-    int[] array;
-    int top;
-
-
-    public Stack(int length){
-       array = new int[length];
-        top = -1;
-    }
+    StackItem top = null;
 
     public void push(int item){
-        if (top == array.length -1) {
-            System.out.println("Stack is fuul");
-        } else {
-            top++;
-            array[top] = item;
-        }
+        StackItem temp = new StackItem();
+        temp.value = item;
+        temp.next = top;
+        top = temp;
+
+
+    }
+    public int pop( ){
+        int a =  top.value;
+                                    // pabidit top
+        top = top.next;
+        return a;
+
+
+    }
+    public boolean isEmpty(){
+        return ( top == null);
+
     }
 
-    public int pop(){
-        if (top < 0){
-            System.out.println("Stack is empty");
-            return 0;
-        } else {
-            int value = array[top];
-            top--;
-            return value;
-        }
+
+    class StackItem{
+        int value;
+        StackItem next;
+
     }
+
+
 }
