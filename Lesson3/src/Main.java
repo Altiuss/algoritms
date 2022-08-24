@@ -1,12 +1,10 @@
 public class Main {
     public static void main(String[] args) {
 
-
         double[] data = new double[20];
         for (int i = 0; i < data.length; i++) {
             data[i] = 100 * Math.random();
             System.out.println(data[i]);
-
         }
         System.out.println();
         double c = 50.0;
