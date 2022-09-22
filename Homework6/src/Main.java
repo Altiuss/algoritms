@@ -18,7 +18,7 @@ public class Main {
         list.add(8);
         list.add(9);
         list.add(10);
-        int k = 10;
+        int k = 11;
 
         list.removeFromEnd(k);
         list.printList();

@@ -48,8 +48,5 @@ public class List {
     private class Node {
         int value;
         Node next;
-
-
     }
-
 }
